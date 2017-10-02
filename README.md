@@ -11,7 +11,8 @@ Use the command : "composer install"
 4. Now you are ready to enjoy.
 
 Instructions to test.
-This services used to create this project are located in the following routes:
+
+The services used to create this project are located in the following routes:
             /new_records/
             /all_data/
             /data_time_slot/parameter1/parameter2
