@@ -281,7 +281,5 @@
 
                 //Per default getDataDefault
                 getDataDefault();
-
-                
-
+                setInterval(function(){getDataDefault();}, 10000);
             });
