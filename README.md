@@ -15,12 +15,19 @@ Use the command : "composer install"
 Instructions to test.
 
 The services used to create this project are located in the following routes:
+
             /new_records/
+            
             /all_data/
+            
             /data_time_slot/parameter1/parameter2
+            
             /data_from/parameter1
+            
             /average_data_time_slot/parameter1/parameter2/parameter3
+            
             /max_data_time_slot/parameter1/parameter2/parameter3
+            
             /min_data_time_slot/parameter1/parameter2/parameter3
 
 To test them, please use REST client applications as Postman or Insomnia.
