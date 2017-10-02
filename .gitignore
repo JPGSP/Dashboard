@@ -1,0 +1,5 @@
+# Slim Framework
+/vendor/
+
+# Sublime
+.DS_Store
