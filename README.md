@@ -2,7 +2,7 @@
 
 Dashboard based in a Restfull API PHP.
 
-Instructions to install.
+1*Instructions to install.
 1. Clone this repository to your machine.
 2. After the clonation is completed, use the composer to install the dependencies.
 Use the command : "composer install"
@@ -10,7 +10,9 @@ Use the command : "composer install"
 * It is necessary to modify the content of the variables $location, $user, $pwd in the file Database.php inside the folder app/lib inside this project. Please introduce the values you have configurated in your system.
 4. Now you are ready to enjoy.
 
-Instructions to test.
+
+
+2*Instructions to test.
 
 The services used to create this project are located in the following routes:
             /new_records/
