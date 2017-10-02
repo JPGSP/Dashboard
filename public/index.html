@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+        <title>Test Joaquin Pino - Sky </title>
+
+        <!-- CSS Boostrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- JS Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- JS HighCharts --> 
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <!-- My JS. Calls to the rest API. --> 
+        <script src="./js/helpers.js"></script>
+        
+       
+    </head>
+
+    <!-- HTML CODE -->
+    <body>
+        <nav class="navbar navbar-inverse visible-xs">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="#">Sky</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Dashboard</a></li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
+
+        <div class="container-fluid">
+          <div class="row content">
+            <div class="col-sm-3 sidenav hidden-xs">
+              <h2>Sky</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#section1">Dashboard</a></li>
+              </ul><br>
+            </div>
+            <br>
+            <div class="col-sm-9">
+                  <div class="well">
+                    <h4>Dashboard</h4>
+                      <div id="highchart_graphics">
+                      </div>
+                  </div>
+              
+
+                  <div class="row">
+
+                    <div class="col-sm-6">
+                      <div class="well">
+                        <button type="button" class="btn btn-default" id="btn_max_data">Get Max Data</button>
+
+                        <form class="form-horizontal" id="get_max_data">
+                          <div class="form-group">
+                            <div class="col-sm-12">
+                              <input type="text" class="form-control" id="data_to_search" placeholder="Max Data To Search">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="from">From:</label>
+                            <div class="col-sm-10"> 
+                              <input type="date" class="form-control" id="from_max">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="to">To:</label>
+                            
+                            <div class="col-sm-10"> 
+                              <input type="date" class="form-control" id="to_max">
+                            </div>
+                          </div>
+
+                          <div class="form-group"> 
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <input type="submit" class="btn btn-default" value="Send">
+
+                              <button type="button" class="btn btn-danger btn-sm" id="btn_cancel_max_data">Cancel</button>
+                            </div>
+                          </div>
+                        </form>
+
+
+                        <button type="button" class="btn btn-default" id="btn_avg_data">Get Average Data</button>
+                        
+                        <form class="form-horizontal" id="get_avg_data">
+                          <div class="form-group">
+                            <div class="col-sm-12">
+                              <input type="text" class="form-control" id="data_get_avg" placeholder="AVG Data To Search">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="from">From:</label>
+                            <div class="col-sm-10"> 
+                              <input type="date" class="form-control" id="from_avg">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="to">To:</label>
+                            
+                            <div class="col-sm-10"> 
+                              <input type="date" class="form-control" id="to_avg">
+                            </div>
+                          </div>
+
+                          <div class="form-group"> 
+                            <div class="col-sm-offset-2 col-sm-10">
+                              <input type="submit" class="btn btn-default" value="Send">
+
+                              <button type="button" class="btn btn-danger btn-sm" id="btn_cancel_avg_data">Cancel</button>
+                            </div>
+                          </div>
+                        </form>
+
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="well">
+                        
+                        <button type="button" class="btn btn-default" id="btn_more_data">More Data</button>
+
+                        <form class="form-inline" id="more_data">
+                            <div class="form-group">
+                              <input type="number" class="form-control" id="how_many" placeholder="How many">
+                            </div>
+
+                            <input type="submit" class="btn btn-default" value="Send">
+
+                            <button type="button" class="btn btn-danger btn-sm" id="btn_cancel_mode_data">Cancel</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </body>
+    
+</html>
