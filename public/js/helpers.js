@@ -15,7 +15,6 @@
                 //Passing the path to an array and removing until the / before the last one
                 var current_url_array = location.pathname.split("/");
                 current_url_array.pop();
-                current_url_array.pop();
                 var new_path_to_go = current_url_array.join("/");
                 //
                 var cpu_data = [];
